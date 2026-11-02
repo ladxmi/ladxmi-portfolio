@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="dark">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mickaël Ramandimbimanana · Développeur web junior</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="deep" aria-hidden="true"></canvas>
+<canvas id="sky" aria-hidden="true"></canvas>
+<div class="glow" aria-hidden="true"><i></i><i></i></div>
+<div id="bar"></div>
+
+<nav><div class="wrap">
+  <a class="logo" href="#top"><b>MR</b><span>Mickaël R.</span></a>
+  <div class="links">
+    <a href="#apropos">À propos</a><a href="#competences">Compétences</a><a href="#projets">Projets</a><a href="#parcours">Parcours</a><a href="#contact">Contact</a>
+  </div>
+</div></nav>
+
+<header class="hero" id="top"><div class="orbit" aria-hidden="true"><i></i><u></u><img class="me" src="images/photo.jpg" alt="Mickaël Ramandimbimanana"></div><span class="astro" aria-hidden="true">🧑‍🚀</span><div class="wrap">
+  <span class="pill reveal"><i></i>Disponible en freelance · Ouvert aux opportunités</span>
+  <h1 class="reveal" style="--d:.08s">Mickaël<br><span>Ramandimbimanana</span></h1>
+  <div class="role reveal" style="--d:.16s"><span id="typed"></span><span class="cur"></span></div>
+  <p class="lead reveal" style="--d:.24s">Développeur web junior, en L3 Informatique à l’ESTI. Je conçois et livre des applications web, de la maquette à la mise en ligne</p>
+  <div class="cta reveal" style="--d:.32s">
+    <a class="btn main" href="#projets">Voir mes projets →</a>
+    <a class="btn" href="#contact">Me contacter</a>
+  </div>
+</div></header>
+
+<section id="apropos"><div class="wrap">
+  <p class="eyebrow">01 · À propos</p><h2 class="reveal">Un profil curieux, autonome et motivé</h2>
+  <div class="grid about">
+    <div class="reveal">
+      <p>Passionné par la création d’applications web et les solutions digitales, je développe aussi bien côté front-end que back-end, et je conçois des bases de données.</p>
+      <p>Je cherche aujourd’hui un emploi ou des missions en freelance pour contribuer à des projets innovants : j’apprends vite, j’aime comprendre comment les choses fonctionnent, et je travaille volontiers en équipe comme en autonomie.</p>
+    </div>
+    <ul class="facts card reveal" style="--d:.1s">
+      <li><b>🎓</b><span>L3 Informatique<small>ESTI, Antananarivo · 2023 – aujourd’hui</small></span></li>
+      <li><b>📍</b><span>Antananarivo<small>Madagascar</small></span></li>
+      <li><b>🗣</b><span>Français (courant)<small>Anglais (intermédiaire)</small></span></li>
+      <li><b>⚡</b><span>Veille technologique<small>Football · Musique · Jeux vidéo</small></span></li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="competences"><div class="wrap">
+  <p class="eyebrow">02 · Compétences</p><h2 class="reveal">Ma boîte à outils</h2>
+  <div class="grid skills">
+    <div class="card reveal"><h3>Front-end</h3><div class="chips"><span>JavaScript</span><span>TypeScript</span><span>SvelteKit</span><span>React.js</span><span>Next.js</span><span>TailwindCSS</span><span>HTML</span><span>CSS</span></div></div>
+    <div class="card reveal" style="--d:.08s"><h3>Back-end & données</h3><div class="chips"><span>PHP</span><span>Java</span><span>Python</span><span>Go (en apprentissage)</span><span>API REST</span><span>PostgreSQL</span><span>MySQL</span></div></div>
+    <div class="card reveal" style="--d:.16s"><h3>Design</h3><div class="chips"><span>Figma</span><span>UI / UX Design</span><span>Maquettes</span></div></div>
+    <div class="card reveal" style="--d:.24s"><h3>Outils & environnements</h3><div class="chips"><span>Git / GitHub</span><span>Podman (découverte)</span><span>Windows</span><span>Linux</span></div></div>
+  </div>
+</div></section>
+
+<section id="projets"><div class="wrap">
+  <p class="eyebrow">03 · Projets</p><h2 class="reveal">Ce que j’ai construit</h2>
+  <div class="proj">
+    <article class="card big reveal">
+      <span class="badge">En cours</span>
+      <p class="eyebrow" style="margin:0">Projet de fin d’études · JIRAMA</p>
+      <h3>Back-office Self Care de la JIRAMA</h3>
+      <p>Interface d’administration de la plateforme self care de la JIRAMA, réalisée à partir d’une maquette fournie. L’objectif : gérer les référentiels de la plateforme (modules, profils, utilisateurs, agences, services) depuis une interface fidèle au design demandé, connectée à l’API Go de la JIRAMA.</p>
+      <div class="hl">
+        <div><b>Interface fidèle</b>Reproduction de la maquette : en-tête, menus, tableaux, panneaux et animations.</div>
+        <div><b>Tableau générique</b>Un seul composant, piloté par une configuration, sert 7 référentiels : recherche, filtres, tri, pagination, CRUD.</div>
+        <div><b>Connexion sécurisée</b>Authentification par jeton avec renouvellement automatique et gestion claire des erreurs.</div>
+        <div><b>Intégration API</b>Couche d’adaptateurs vers l’API Go et la base PostgreSQL, séparée de l’affichage.</div>
+      </div>
+      <span class="tag">SvelteKit</span><span class="tag">TypeScript</span><span class="tag">Go</span><span class="tag">PostgreSQL</span><span class="tag">API REST</span><span class="tag">JWT</span><span class="tag">Podman</span>
+    </article>
+    <article class="card reveal">
+      <span class="badge">Avril 2026</span>
+      <h3>Site web pour un client local</h3>
+      <p>Projet mené de bout en bout : définition des besoins, conception de la maquette, développement et intégration selon les retours du client, puis mise en ligne et déploiement.</p>
+      <span class="tag">Maquette</span><span class="tag">Intégration</span><span class="tag">Déploiement</span>
+    </article>
+    <article class="card reveal" style="--d:.1s">
+      <span class="badge">2024</span>
+      <h3>Aide informatique · PAM</h3>
+      <p>Stage au Programme Alimentaire Mondial : assistance et maintenance des postes de travail Windows et Linux, et participation à la gestion des données et des systèmes d’information.</p>
+      <span class="tag">Windows</span><span class="tag">Linux</span><span class="tag">Support</span><span class="tag">Données</span>
+    </article>
+  </div>
+</div></section>
+
+<section id="parcours"><div class="wrap">
+  <p class="eyebrow">04 · Parcours</p><h2 class="reveal">Expériences & formations</h2>
+  <div class="grid cols">
+    <div class="reveal">
+      <h3 class="col-title">Expériences</h3>
+      <ul class="tl">
+        <li><time>2026</time><h4>Back-office Self Care · JIRAMA</h4><p>Développement de l’interface d’administration et intégration avec l’API.</p></li>
+        <li><time>Avril 2026</time><h4>Site web pour un client local</h4><p>Maquette, développement, mise en ligne.</p></li>
+        <li><time>Nov. – Déc. 2024</time><h4>Stagiaire aide informatique · PAM</h4><p>Maintenance des postes, gestion des données.</p></li>
+      </ul>
+    </div>
+    <div class="reveal" style="--d:.1s">
+      <h3 class="col-title">Formations</h3>
+      <ul class="tl">
+        <li><time>2023 – aujourd’hui</time><h4>Licence Informatique, parcours Intégration et Développement (L3)</h4><p>ESTI, Antananarivo</p></li>
+        <li><time>Juin – Sept. 2023</time><h4>Formation UI/UX Design</h4><p>DTC, Antananarivo</p></li>
+        <li><time>Sept. – Nov. 2022</time><h4>Formation en comptabilité</h4><p>DTC, Antananarivo</p></li>
+        <li><time>2020 – 2021</time><h4>L1 Finance et comptabilité</h4><p>ISPM</p></li>
+        <li><time>2020</time><h4>Baccalauréat</h4><p></p></li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <div class="card contact reveal">
+    <p class="eyebrow">05 · Contact</p>
+    <h2>Travaillons ensemble</h2>
+    <p>Disponible pour des missions en freelance ou un poste en développement web. Un projet, une idée, une opportunité ? Écrivez-moi.</p>
+    <div class="cta">
+      <a class="btn main" href="mailto:tojoniaina.ramandimbimanana@esti.mg">✉ tojoniaina.ramandimbimanana@esti.mg</a>
+      <a class="btn" href="tel:+261329550610">☎ 032 95 506 10</a>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">© <span id="yr"></span> Ramandimbimanana Tojoniaina Mickaël · Antananarivo, Madagascar</div></footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
